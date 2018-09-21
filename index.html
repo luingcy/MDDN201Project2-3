@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenBook</title>
+    <script src="p5.min.js"></script>
+    <script src="addons/p5.dom.min.js"></script> 
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<div class = "headerBar">
+	<h1> openbook </h1>
+</div>
+
+<div id="sketch-holder">
+	<div id="chatbox">
+	</div>
+</div>
+
+<div class = "profile">
+	<div class = "sidebar"> 
+		<div id = "profilePic"> </div>
+		<div id = "friendsList"> 
+			<h2> friends (242) </h2>
+			<div>
+				<img src="img/profilePictureSmall.png" width = "110" height = "110">
+				OpenBook User
+			</div>
+			<div>
+				<img src="img/profilePictureSmall.png" width = "110" height = "110">
+				OpenBook User
+			
+			</div>
+			<div>
+				<img src="img/profilePictureSmall.png" width = "110" height = "110">
+				OpenBook User
+			</div>
+			<div>
+				<img src="img/profilePictureSmall.png" width = "110" height = "110">
+				OpenBook User
+			</div>
+			<div>
+				<img src="img/profilePictureSmall.png" width = "110" height = "110">
+				OpenBook User
+			</div>
+		</div>
+	</div>
+	<div class = "mainProfile"> 
+		<h1 id = "nameDisplay"> User </h1>
+		<h2> Info </h2>
+		<div id = "privacyNotice"> People who aren't friends with User see only some of their profile information. If you know User personally, 
+		<a id="chatLink" style="color: blue">send them a message.</a></div>
+			
+			<table>
+				<tr>
+					<th> Basic Information </th>
+					<th> </th>
+				<tr>
+					<td class = "col1">Sex:</td>
+					<td id="gender" class = "col2">Unknown</td>
+				</tr>
+				<tr>
+					<td class = "col1">Age:</td>
+					<td id="age" class = "col2">Unknown</td>
+				</tr>
+				<tr>
+					<td class = "col1">Current City:</td>
+					<td id="location" class = "col2">Unknown</td>
+				</tr>
+				<tr>
+					<th> Personal Information </th>
+					<th> </th>
+				</tr>
+				<tr>
+					<td class = "col1">Interests:</td>
+					<td id="interests" class = "col2">Unknown</td>
+				</tr>
+				<tr>
+					<td class = "col1">Favourite Music:</td>
+					<td id="music" class = "col2">Unknown</td>
+				</tr>
+				<tr>
+					<td class = "col1">Favourite Movie:</td>
+					<td id="movie" class = "col2">Unknown</td>
+				</tr>
+				<tr> 
+					<th> Education and Work </th>
+					<th> </th>
+				<tr>
+					<td class = "col1">College:</td>
+					<td id="college" class = "col2">Unknown</td>
+				</tr>
+				<tr>
+					<td class = "col1">Employer:</td>
+					<td id="job" class = "col2">Unknown</td>
+				</tr>
+			</table>
+
+	</div>
+</div> 
+
+
+<script type="text/javascript">
+
+	autoScroll();
+	setInterval(checkScroll, 500);
+	
+
+	function autoScroll(){		
+		scrollH = document.getElementById("chatbox").scrollHeight;
+		var chatbox = document.getElementById("chatbox");
+		chatbox.scrollTop = chatbox.scrollHeight;
+		
+	}
+
+	function checkScroll(){
+		console.log(scrollH);
+		if(scrollH !=  document.getElementById("chatbox").scrollHeight){
+			console.log('check');
+			autoScroll();
+
+		}
+	}
+
+
+
+</script>
+</body>
+</html>
