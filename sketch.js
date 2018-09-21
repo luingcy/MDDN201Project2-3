@@ -225,8 +225,8 @@ function answer(msg){
 		username = t.charAt(0).toUpperCase() + t.substr(1, 13);
 		questionNum = 2;	
 		select("#nameDisplay").html(username);
-		select("#privacyNotice")
-		.html("People who aren't friends with " + username + " see only some of their profile information. If you know " + username + " personally, send them a message.");
+		select("#namedNotice")
+		.html("People who aren't friends with " + username + " see only some of their profile information. If you know " + username + " personally, ");
 		nameReceived = true;
 			return "Huh? That's my name too! " + questions[2];
 			
@@ -289,8 +289,8 @@ function answer(msg){
 		return "Oh great choice, I totally agree. So "+ questions[8];
 	}
 	else if(questionNum == 8 && 
-	match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya|no|not|never|didn't|i don't|dont|didnt|na") != null){ //
-		if(match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya") != null) { //uni yes/no
+	match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya|no|not|never|didn't|i don't|dont|didnt|na|ye") != null){ //
+		if(match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya|ye") != null) { //uni yes/no
 
 			questionNum = 9;
 			return "Oh cool me too! "+ questions[9];
@@ -308,8 +308,8 @@ function answer(msg){
 		return "Okay now this is getting weird... "+ questions[10];
 	}
 	else if(questionNum == 10 && 
-	match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya|no|not|never|didn't|i don't|dont|didnt|na") != null){ //work yes/no
-		if(match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya") != null) { 
+	match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya|no|not|never|didn't|i don't|dont|didnt|na|ye") != null){ //work yes/no
+		if(match(t, "yes|yea|of course|i did(?!n)|i do(?!n)|totally|definitely|ya|ye") != null) { 
 
 			questionNum = 11;
 			return "Same... "+ questions[11];
