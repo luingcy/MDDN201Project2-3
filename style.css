@@ -1,0 +1,228 @@
+#sketch-holder {
+background: transparent;
+position: fixed;
+bottom: 0;
+right: 0;
+font-family: "Segoe UI", "Tahoma";
+z-index: 10;
+
+
+}
+
+* {
+	font-family: "Segoe UI", "Tahoma";
+
+}
+
+#chatbox {
+	width: 98%;
+	height: 330px;
+	background: white;
+	position: absolute;
+	top: 30px;
+	overflow-y: auto;
+	overflow-x: visible;
+	padding-top: 5px;
+	border-style: ridge;
+
+}
+
+
+
+#chatbox #sent, #chatbox #received {
+	padding: 10px;
+	width: 40%;
+	word-wrap: break-word;
+}
+
+#sent {
+	background: #0086FF;
+	text-align: right;
+	color: white;
+	margin: 5px 0px 5px 50%;
+	border-radius: 20px 20px 0px 20px;
+}
+
+#received {
+	background: Gainsboro;
+	text-align: left;
+	color: black;
+	margin: 5px 40% 5px 10px;
+	border-radius: 20px 20px 20px 0px;
+
+}
+
+#yourname {
+
+	margin: 0px 15px 0px 50%;
+	padding: 0px;
+	text-align: right;
+	background: transparent;
+	width: 40%;
+	word-wrap: break-word;
+	
+}
+
+#theirname {
+	margin: 0px 15px;
+	padding: 0px;
+	text-align: left;
+	background: transparent;
+	width: 40%;
+	word-wrap: break-word;
+	
+}
+
+#blocked {
+	text-align: center;
+	width: 90%;
+	margin: 10px;
+	background: transparent;
+}
+
+.headerBar {
+	width: 100%;
+	height: 50px;	
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #3b5998;
+
+}
+
+.headerBar h1 {
+	font-family: "Segoe UI", "Tahoma";
+	padding-left: 50px;
+	margin: 0px;
+	color: white;
+}
+
+.sidebar {
+	position: absolute;
+	z-index: 0;
+	margin-top: 60px;
+	margin-left: 200px;
+	margin-bottom: 30px;
+	width: 270px;
+	background: transparent;
+}
+
+#friendsList {
+	margin: auto;
+	padding: 5px;
+	padding-top: 2px;
+	width: 90%;
+	background: #f4f5f7;
+	color: #0086FF;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+#friendsList div  {
+	margin: 5px;
+}
+#friendsList h2 {
+	margin: 10px;
+}
+#friendsList img {
+	margin-right: 5px;	
+	border: 4px;
+	border-style: solid;
+	border-color: white;
+	vertical-align: text-top;
+
+}
+
+
+#profilePic {
+	background-image: url("img/profileUnknown.png");
+	background-size: cover;
+	border: 14px;
+	border-style: solid;
+	border-color: #f4f5f7;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 222.4px;
+	height: 320px;
+	z-index: 10;
+}
+
+
+.mainProfile {
+	width: 50%;
+	margin-left: 500px;
+	margin-top: 150px;
+	background: #f4f5f7;
+	position: absolute;
+}
+
+.mainProfile h1 {
+	position: absolute;
+	top: -110px;
+
+}
+.mainProfile h2 {
+	position: relative;
+	top: -35px;
+	margin: 0px;
+	padding: 3px;
+	background: #f4f5f7;
+	width: 75px;
+	text-align: center;
+}
+
+
+.mainProfile table {
+	width: 95%;
+	text-align: left;
+	margin: auto;
+	border-collapse: collapse;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	margin-top: 0px;
+	
+}
+
+.mainProfile th {
+	padding: 40px 10px 10px 10px;
+	width: 50%;
+	border: 3px;
+	color: black;
+	border-color: #d1d1d1;
+	border-style: hidden hidden solid hidden;
+	
+}
+.mainProfile td {
+	padding: 0px 10px 5px 10px;
+
+}
+
+.col1 {
+	color: #737373;
+}
+
+.col2 {
+	color: black;
+}
+
+
+#privacyNotice {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+
+	border: 2px;
+	background-color: #EEEFF4;
+	border-style: solid;
+
+	border-color: #DCDDE1;
+
+}
+
+#sketch-holder input{
+	background: white;
+}
+
+
